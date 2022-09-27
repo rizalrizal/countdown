@@ -51,7 +51,7 @@
             .container
             {
                 width: 100%;
-                max-width: 600px;
+                max-width: 800px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -67,7 +67,7 @@
                     <div class="text">Ikatan Dinas Berakhir Pada Tanggal 27 April 2027</div>
                 </div>
                 <div class="section border-bottom-class">
-                    <div id="sisa" class="text">Sisa </div>
+                    <div id="sisa" class="text"></div>
                 </div>
                 <div class="section border-bottom-class">
                     <div id="demo" class="text"></div>
@@ -181,7 +181,7 @@ var monthLength = (monthEnd - monthStart) / (1000 * 60 * 60 * 24);
 return monthLength;
 }
 
-  document.getElementById("sisa").innerHTML = getAge(new Date(2027, 04, 27), new Date());
+  document.getElementById("sisa").innerHTML = "Sisa " + getAge(new Date(2027, 04, 27), new Date());
 
         </script>
     </body>
